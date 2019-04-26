@@ -1,6 +1,6 @@
 FROM steamcmd
 
-MAINTAINER dockerman@madmunki.com
+LABEL maintainer dockerman@madmunki.com
 
 RUN dir
 
