@@ -1,0 +1,18 @@
+FROM steamcmd
+
+MAINTAINER dockerman@madmunki.com
+
+RUN dir
+
+WORKDIR c:/steamcmd
+
+RUN dir
+
+run steamcmd.exe +login anonymous +force_install_dir c:\7daystodie +app_update 294420 +quit
+
+WORKDIR c:/7daystodie
+
+CMD startdedicated.bat
+
+EXPOSE 26900
+
